@@ -1,19 +1,16 @@
-<!-- Header -->
-<!-- Attractive Header -->
-<header class="bg-white border-bottom shadow-sm py-2 px-2 d-flex justify-content-between align-items-center">
-    <h4 class="mb-0 text-primary">Pathway Generator</h4>
-    
-    <label class="btn btn-outline-primary mb-0">
-      Upload JSON
-      <input type="file" hidden accept=".json"  />
-    </label>
-  </header>
-  
-  
-  <!-- Centered Content (Optional) -->
-  <div class="d-flex justify-content-center align-items-center vh-100">
-    <div class="text-center">
-      <h4>Welcome to the Conversational Pathway Uploader</h4>
-    </div>
+<header
+  class="bg-white border-bottom shadow-sm py-2 px-2 d-flex justify-content-between align-items-center">
+  <h4 class="mb-0 text-primary ms-3">Pathway Generator</h4>
+
+  <label class="btn btn-outline-primary mb-0">
+    Upload Question
+    <input type="file" hidden accept=".json" />
+  </label>
+</header>
+
+<div class="d-flex" style="height: 100vh;">
+  <app-sidebar></app-sidebar>
+  <div class="flex-grow-1 overflow-auto">
+    <app-jsoneditors></app-jsoneditors>
   </div>
-  
+</div>

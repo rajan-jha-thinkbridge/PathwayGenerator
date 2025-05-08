@@ -1,0 +1,13 @@
+<div style="display: flex; height: 100vh; flex-direction: column;">
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+      <h3 *ngIf="selectedItem">Editing: {{selectedItem}} - Version {{pathwayVersion}}</h3>
+      <div *ngIf="selectedItem">
+        <button class="btn btn-outline-warning mb-0" style="margin-left: 10px;">Save</button>
+        <button class="btn btn-outline-success mb-0" style="margin-left: 10px;">Update</button>
+      </div>
+    </div>
+    <div style="flex: 1; padding: 10px;">
+      <div #editorContainer style="width: 100%; height: 500px;"></div>
+    </div>
+  </div>
+  
